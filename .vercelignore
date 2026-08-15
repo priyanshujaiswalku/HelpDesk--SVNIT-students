@@ -1,0 +1,15 @@
+node_modules
+.git
+.gitignore
+
+# This is a pure static HTML site - Vercel serves the .html/.htm files directly.
+# package.json is excluded so Vercel does not detect a Node server project and
+# then fail looking for an entrypoint. It stays in the repo for local `npm run dev`.
+package.json
+package-lock.json
+server.js
+
+# Empty placeholder files (1-2 bytes) that would otherwise serve blank pages.
+# The real homepage nav uses home.htm, not home.html.
+home.html
+matches

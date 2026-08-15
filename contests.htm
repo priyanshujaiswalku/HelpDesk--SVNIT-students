@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTESTS</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+      .verified-note {
+        text-align: center;
+        color: #94a3b8;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+        margin: 10px 20px 25px 20px;
+      }
+      .verified-note b { color: #38ef7d; }
+      .live-status { text-align: center; color: #94a3b8; font-size: 13px; font-family: system-ui, sans-serif; }
+      .state-live  { color: #38ef7d; font-weight: 700; }
+      .state-soon  { color: #f4d03f; font-weight: 700; }
+      .state-over  { color: #94a3b8; }
+      .platform-link {
+        display: block;
+        text-align: center;
+        color: #46bddf;
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-family: system-ui, sans-serif;
+      }
+    </style>
   </head><body>
     <div class="top"><ul>
         <li><div class="navlinks" id="navlinks">
@@ -16,51 +38,180 @@
           <li><a href="contests.htm">Contests</a></li>
           </b></li></ul></div>
 
-          <li><a href="home.htm"><img src="logo.png" width="80" height="80"></li></a></div><br><br><br>
+          <li><a href="home.htm"><img src="logo.png" width="80" height="80" alt="CodersRank logo - back to home"></li></a></div><br><br><br>
         <div class="head"><h1>UPCOMING CONTESTS : </h1></div><br>
+
+      <p class="verified-note">
+        All start times are shown in <b>IST (UTC+5:30)</b>. Schedule verified against the official
+        Codeforces, CodeChef and AtCoder listings on <b>16 August 2026</b>.
+        Countdowns below are computed live in your own browser, and the Codeforces table
+        refreshes itself from the official Codeforces API each time this page is opened.
+      </p>
+
       <h2 style="color: #e95065;"><center>CODEFORCES</center></h2>
-      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date </div><div class="tab2"> Contest duration </div><div class="tab2"> Time left </div></div>
-      <a href="https://codeforces.com/contests"><div class="listq">1<div class="tab1"> Codeforces round 731 (Div. 3) </div><div class="tab1" id="datetime">Jul 10, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left1"></div></div></a>
-      <a href="https://codeforces.com/contests"><div class="listq">2<div class="tab1"> Codeforces round 732 (Div. 1) </div><div class="tab1" id="datetime">Jul 11, 2021 19:35:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left2"></div></div></a>
-      <a href="https://codeforces.com/contests"><div class="listq">3<div class="tab1"> Codeforces round 732 (Div. 2) </div><div class="tab1" id="datetime">Jul 11, 2021 19:35:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left3"></div></div></a>
-      <a href="https://codeforces.com/contests"><div class="listq">4<div class="tab1"> Codeforces round 734 (Div. 2) </div><div class="tab1" id="datetime">Aug 1, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left5"></div></div></a>
-      <a href="https://codeforces.com/contests"><div class="listq">5<div class="tab1"> Codeforces round 734 (Div. 1) </div><div class="tab1" id="datetime">Aug 1, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left4"></div></div></a>
+      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date (IST) </div><div class="tab2"> Duration </div><div class="tab2"> Time left </div></div>
+      <div id="cf-rows">
+        <a href="https://codeforces.com/contests"><div class="listq">1<div class="tab1"> Codeforces Round 1117 (Div. 2) </div><div class="tab1"> Aug 17, 2026 20:05 </div><div class="tab1"> 02:00 </div><div class="tab1 countdown" data-start="1786977300" data-duration="7200"></div></div></a>
+        <a href="https://codeforces.com/contests"><div class="listq">2<div class="tab1"> ICPC 2026 Online Challenge 1 (Huawei) </div><div class="tab1"> Aug 14, 2026 16:30 </div><div class="tab1"> 14 days </div><div class="tab1 countdown" data-start="1786705200" data-duration="1209600"></div></div></a>
+      </div>
+      <a class="platform-link" href="https://codeforces.com/contests" target="_blank" rel="noopener">See the full official Codeforces schedule &rarr;</a>
+
       <h2 style="color: #e95065;"><center>CODECHEF</center></h2>
-      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date </div><div class="tab2"> Contest duration </div><div class="tab2"> Time left </div></div>
-      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">1<div class="tab1"> Codechef July cookoff challenge 2021 </div><div class="tab1" id="datetime">Jul 18, 2021 21:30:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left6"></div></div></a>
-      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">2<div class="tab1"> Codechef July Lunchtime 2021 </div><div class="tab1" id="datetime">Jul 31, 2021 19:30:00</div><div class="tab1" id="duration">03:00</div><div class="tab1" id="time-left7"></div></div></a>
-      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">3<div class="tab1"> Codechef July challenge (Div. 3) </div><div class="tab1" id="datetime">Jun 02, 2021 15:00:00</div><div class="tab1" id="duration">10:00:00</div><div class="tab1" id="time-left8"></div></div></a>
-      
+      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date (IST) </div><div class="tab2"> Duration </div><div class="tab2"> Time left </div></div>
+      <a href="https://www.codechef.com/contests"><div class="listq">1<div class="tab1"> Monday Munch - DSA Challenge 016 (Rated) </div><div class="tab1"> Aug 17, 2026 19:00 </div><div class="tab1"> 03:00 </div><div class="tab1 countdown" data-start="1786973400" data-duration="10800"></div></div></a>
+      <a href="https://www.codechef.com/contests"><div class="listq">2<div class="tab1"> Placement Prep Weekends - 03 </div><div class="tab1"> Aug 15, 2026 00:00 </div><div class="tab1"> 2 days </div><div class="tab1 countdown" data-start="1786732200" data-duration="179940"></div></div></a>
+      <a class="platform-link" href="https://www.codechef.com/contests" target="_blank" rel="noopener">See the full official CodeChef schedule &rarr;</a>
+
+      <h2 style="color: #e95065;"><center>ATCODER</center></h2>
+      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date (IST) </div><div class="tab2"> Duration </div><div class="tab2"> Time left </div></div>
+      <a href="https://atcoder.jp/contests/"><div class="listq">1<div class="tab1"> AtCoder Regular Contest 227 (ARC) </div><div class="tab1"> Aug 16, 2026 17:30 </div><div class="tab1"> 02:00 </div><div class="tab1 countdown" data-start="1786881600" data-duration="7200"></div></div></a>
+      <a href="https://atcoder.jp/contests/"><div class="listq">2<div class="tab1"> AtCoder Weekday Contest 0136 (Beta) </div><div class="tab1"> Aug 17, 2026 16:30 </div><div class="tab1"> 01:00 </div><div class="tab1 countdown" data-start="1786964400" data-duration="3600"></div></div></a>
+      <a href="https://atcoder.jp/contests/"><div class="listq">3<div class="tab1"> AtCoder Beginner Contest 472 (ABC) </div><div class="tab1"> Aug 22, 2026 17:30 </div><div class="tab1"> 01:40 </div><div class="tab1 countdown" data-start="1787400000" data-duration="6000"></div></div></a>
+      <a href="https://atcoder.jp/contests/"><div class="listq">4<div class="tab1"> Asprova Programming Contest (AHC 070) </div><div class="tab1"> Aug 29, 2026 11:30 </div><div class="tab1"> 04:00 </div><div class="tab1 countdown" data-start="1787983200" data-duration="14400"></div></div></a>
+      <a href="https://atcoder.jp/contests/"><div class="listq">5<div class="tab1"> AtCoder Beginner Contest 473 (ABC) </div><div class="tab1"> Aug 29, 2026 17:30 </div><div class="tab1"> 01:40 </div><div class="tab1 countdown" data-start="1788004800" data-duration="6000"></div></div></a>
+      <a href="https://atcoder.jp/contests/"><div class="listq">6<div class="tab1"> AtCoder Beginner Contest 474 (ABC) </div><div class="tab1"> Sep 06, 2026 09:40 </div><div class="tab1"> 01:40 </div><div class="tab1 countdown" data-start="1788667800" data-duration="6000"></div></div></a>
+      <a class="platform-link" href="https://atcoder.jp/contests/" target="_blank" rel="noopener">See the full official AtCoder schedule &rarr;</a>
+
+      <h2 style="color: #e95065;"><center>REGULAR WEEKLY SCHEDULE</center></h2>
+      <p class="verified-note">
+        These series repeat every week, but the individual contest numbers are published only a few days
+        in advance &mdash; use the platform links above for the exact dated listing.
+      </p>
+      <div class="listq"> S.n.<div class="tab2">Contest series </div><div class="tab2"> Usual slot (IST) </div><div class="tab2"> Duration </div><div class="tab2"> Platform </div></div>
+      <a href="https://www.codechef.com/contests" target="_blank" rel="noopener"><div class="listq">1<div class="tab1"> CodeChef Starters (rated) </div><div class="tab1"> Every Wednesday, 20:00 </div><div class="tab1"> 02:00 </div><div class="tab1"> CodeChef </div></div></a>
+      <a href="https://www.codechef.com/contests" target="_blank" rel="noopener"><div class="listq">2<div class="tab1"> Monday Munch - DSA Challenge </div><div class="tab1"> Every Monday, 19:00 </div><div class="tab1"> 03:00 </div><div class="tab1"> CodeChef </div></div></a>
+      <a href="https://leetcode.com/contest/" target="_blank" rel="noopener"><div class="listq">3<div class="tab1"> LeetCode Weekly Contest </div><div class="tab1"> Every Sunday, 08:00 </div><div class="tab1"> 01:30 </div><div class="tab1"> LeetCode </div></div></a>
+      <a href="https://leetcode.com/contest/" target="_blank" rel="noopener"><div class="listq">4<div class="tab1"> LeetCode Biweekly Contest </div><div class="tab1"> Alternate Saturdays, 20:00 </div><div class="tab1"> 01:30 </div><div class="tab1"> LeetCode </div></div></a>
+      <a href="https://atcoder.jp/contests/" target="_blank" rel="noopener"><div class="listq">5<div class="tab1"> AtCoder Beginner Contest (ABC) </div><div class="tab1"> Most Saturdays, 17:30 </div><div class="tab1"> 01:40 </div><div class="tab1"> AtCoder </div></div></a>
+
+      <p class="live-status" id="live-status"></p>
+
       <script>
-    function setTimer(elem_id, date) {
-    var target_date = new Date(date).getTime();
-    var days, hours, minutes, seconds;
-    var countDownElem = document.getElementById(elem_id);
-    setInterval(function () {
-      var current_date = new Date().getTime();
-      var seconds_left = (target_date - current_date) / 1000;
-      days = parseInt(seconds_left / 86400);
-      seconds_left = seconds_left % 86400;
-      hours = parseInt(seconds_left / 3600);
-      seconds_left = seconds_left % 3600;
-      minutes = parseInt(seconds_left / 60);
-      seconds = parseInt(seconds_left % 60);
-      countDownElem.innerHTML = days + "D:" + hours + "H:" + minutes + "M:" + seconds + "S";
-      if (seconds_left < 0) {
-    countDownElem.innerHTML="Contest is over."
-    }
-      }, 1000);
-     }
-        setTimer("time-left1","Jul 10, 2021 18:05:00");
-        setTimer("time-left2","Jul 11, 2021 19:35:00");
-        setTimer("time-left3","Jul 11, 2021 19:35:00");
-        setTimer("time-left4","Aug 1, 2021 20:05:00");
-        setTimer("time-left5","Aug 1, 2021 20:05:00");
-        setTimer("time-left6","Jul 18, 2021 21:30:00");
-        setTimer("time-left7","Jul 31, 2021 19:30:00");
-        setTimer("time-left8","Jun 30, 2021 15:00:00");
+      (function () {
+        // ---- Countdown engine -------------------------------------------------
+        // Each row carries data-start (unix epoch, seconds) and data-duration
+        // (seconds), so the countdown is correct in every visitor's timezone.
+        function pad(n) { return n < 10 ? "0" + n : "" + n; }
 
+        function render() {
+          var now = Math.floor(Date.now() / 1000);
+          var cells = document.querySelectorAll(".countdown");
+          for (var i = 0; i < cells.length; i++) {
+            var cell = cells[i];
+            var start = parseInt(cell.getAttribute("data-start"), 10);
+            var duration = parseInt(cell.getAttribute("data-duration"), 10) || 0;
+            if (isNaN(start)) { continue; }
 
-</script>     
+            var left = start - now;
+            cell.className = "tab1 countdown";
+
+            if (left > 0) {
+              var d = Math.floor(left / 86400);
+              var h = Math.floor((left % 86400) / 3600);
+              var m = Math.floor((left % 3600) / 60);
+              var s = left % 60;
+              cell.textContent = d + "D:" + pad(h) + "H:" + pad(m) + "M:" + pad(s) + "S";
+              // Highlight anything starting within the next 24 hours.
+              cell.className += left <= 86400 ? " state-soon" : "";
+            } else if (now < start + duration) {
+              cell.textContent = "Live now - join!";
+              cell.className += " state-live";
+            } else {
+              cell.textContent = "Contest is over.";
+              cell.className += " state-over";
+            }
+          }
+        }
+
+        render();
+        setInterval(render, 1000);
+
+        // ---- Live Codeforces refresh -----------------------------------------
+        // The official Codeforces API sends Access-Control-Allow-Origin: *, so the
+        // table can rebuild itself from real data. On any failure we simply keep
+        // the verified static rows already present in the HTML.
+        var IST_OFFSET = 5.5 * 3600;         // seconds ahead of UTC
+        var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+        function formatIST(epochSeconds) {
+          var d = new Date((epochSeconds + IST_OFFSET) * 1000);
+          return MONTHS[d.getUTCMonth()] + " " + pad(d.getUTCDate()) + ", " +
+                 d.getUTCFullYear() + " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
+        }
+
+        function formatDuration(seconds) {
+          if (seconds >= 86400) {
+            var days = Math.round(seconds / 86400);
+            return days + (days === 1 ? " day" : " days");
+          }
+          return pad(Math.floor(seconds / 3600)) + ":" + pad(Math.floor((seconds % 3600) / 60));
+        }
+
+        function escapeHtml(text) {
+          return String(text).replace(/[&<>"']/g, function (ch) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
+          });
+        }
+
+        var status = document.getElementById("live-status");
+        var rows = document.getElementById("cf-rows");
+
+        if (!window.fetch || !rows) { return; }
+
+        fetch("https://codeforces.com/api/contest.list?gym=false")
+          .then(function (res) { return res.ok ? res.json() : Promise.reject(res.status); })
+          .then(function (payload) {
+            if (payload.status !== "OK" || !payload.result) { throw new Error("bad payload"); }
+
+            var now = Math.floor(Date.now() / 1000);
+            var upcoming = payload.result.filter(function (c) {
+              // Keep contests that have not started yet, plus any still running.
+              return c.startTimeSeconds &&
+                     (c.phase === "BEFORE" ||
+                      (c.phase === "CODING" && now < c.startTimeSeconds + c.durationSeconds));
+            }).sort(function (a, b) {
+              return a.startTimeSeconds - b.startTimeSeconds;
+            }).slice(0, 8);
+
+            if (!upcoming.length) { throw new Error("none upcoming"); }
+
+            rows.innerHTML = upcoming.map(function (c, i) {
+              return '<a href="https://codeforces.com/contest/' + c.id + '">' +
+                       '<div class="listq">' + (i + 1) +
+                         '<div class="tab1"> ' + escapeHtml(c.name) + ' </div>' +
+                         '<div class="tab1"> ' + formatIST(c.startTimeSeconds) + ' </div>' +
+                         '<div class="tab1"> ' + formatDuration(c.durationSeconds) + ' </div>' +
+                         '<div class="tab1 countdown" data-start="' + c.startTimeSeconds +
+                           '" data-duration="' + c.durationSeconds + '"></div>' +
+                       '</div>' +
+                     '</a>';
+            }).join("");
+
+            render();
+            if (status) {
+              status.innerHTML = 'Codeforces table refreshed live from the official API &mdash; ' +
+                                 upcoming.length + ' contest(s) currently scheduled.';
+            }
+          })
+          .catch(function () {
+            if (status) {
+              status.innerHTML = 'Live Codeforces refresh unavailable right now &mdash; ' +
+                                 'showing the schedule verified on 16 August 2026. ' +
+                                 '<a href="https://codeforces.com/contests" target="_blank" rel="noopener" ' +
+                                 'style="color:#46bddf;">Check codeforces.com/contests &rarr;</a>';
+            }
+          });
+      })();
+      </script>
+    <div class="dev-credit-container">
+        <div class="dev-credit-badge">
+            <span class="label">Designed &amp; Developed by</span>
+            <span class="name">Priyanshu Kumar</span>
+            <span class="roll">I22MA017</span>
+            <span class="divider">|</span>
+            <span class="dept-badge">Department of Mathematics, SVNIT Surat</span>
+        </div>
+    </div>
   </body>
 </html>

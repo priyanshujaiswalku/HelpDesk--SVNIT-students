@@ -1,0 +1,13 @@
+{
+  "name": "student-helpdesk",
+  "version": "1.0.0",
+  "description": "SVNIT Student Helpdesk Website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Priyanshu Kumar (I22MA017 - Department of Mathematics, SVNIT Surat)",
+  "license": "ISC"
+}

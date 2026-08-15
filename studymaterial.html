@@ -1,152 +1,380 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study_Material</title>
+    <title>SVNIT First Year Study Material & Learning Hub</title>
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-    body {
-        background: rgb(39, 37, 37);
-    }
-
-    h1 {
-        color: rgb(44, 32, 32);
-        text-shadow: 1px 1px 4px rgb(255, 255, 255), 0 0 25px rgb(175, 161, 159), 0 0 10px rgb(241, 241, 240);
-        margin-left: 24px;
-        font-family: cursive;
-    }
-
-    .study {
-        color: rgb(255, 255, 255);
-        display: flex;
-        justify-content: space-between;
-    }
-    .second{
-        margin-right: 50px;
-    }
-
-    .study a {
-        color: aliceblue;
-        text-decoration: none;
-    }
-
-    .books,
-    .material,
-    .coding {
-        padding: 50px;
-        border: 4px solid aliceblue;
-        border-radius: 10px;
-        background-color: rgb(43, 37, 37);
-        font-size: 30px;
-        font-family: cursive;
-        text-align: left;
-        margin-left: 20px;
-        box-shadow: 0 0 10px 0px rgb(4, 250, 229);
-
-    }
-
-    .books a:hover , .material a:hover , .coding a:hover{
-        color: wheat;
-    }
-
-.moveto{
-    color: rgb(204, 208, 211);
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bolder;
-}
-.moveto span{
-    color: aqua;
-    font-weight: bolder;
-}
-
-</style>
-
-<script type="text/javascript">
-		function createCookie(cookieName,cookieValue,daysToExpire)
-        {
-          var date = new Date();
-          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
-          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-		function accessCookie(cookieName)
-        {
-          var name = cookieName + "=";
-          var allCookieArray = document.cookie.split(';');
-          for(var i=0; i<allCookieArray.length; i++)
-          {
-            var temp = allCookieArray[i].trim();
-            if (temp.indexOf(name)==0)
-            return temp.substring(name.length,temp.length);
-       	  }
-        	return "";
+
+        .header-banner {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95)), url('study.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid rgba(244, 208, 63, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-		function checkCookie()
-        {
-          var user = accessCookie("testCookie");
-          if (user!="")
-        	alert("Welcome Back " + user + "!!!");
-          else
-          {
-            user = prompt("Please enter your name");
-            num = prompt("How many days you want to store your name on your computer?");
-            if (user!="" && user!=null)
-            {
-            createCookie("testCookie", user, num);
+
+        .header-banner h1 {
+            color: #f4d03f;
+            font-size: 38px;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(244, 208, 63, 0.3);
+            letter-spacing: 1px;
+        }
+
+        .header-banner p {
+            color: #94a3b8;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            color: #38bdf8;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(56, 189, 248, 0.25);
+        }
+
+        .section-title i {
+            color: #f4d03f;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .resource-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.35s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(56, 239, 125, 0.5);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 239, 125, 0.2);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #38ef7d;
+        }
+
+        .resource-card h3 {
+            color: #f8fafc;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .resource-card p {
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff !important;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        .btn-link:hover {
+            background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+            color: #0f172a !important;
+            box-shadow: 0 4px 15px rgba(56, 239, 125, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-yt {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn-yt:hover {
+            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+            color: #fff !important;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.5);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(244, 208, 63, 0.15);
+            color: #f4d03f;
+            border: 1px solid rgba(244, 208, 63, 0.3);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .back-nav {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(30, 41, 59, 0.8);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <script type="text/javascript">
+        function createCookie(cookieName, cookieValue, daysToExpire) {
+            var date = new Date();
+            date.setTime(date.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
+            document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+        }
+
+        function accessCookie(cookieName) {
+            var name = cookieName + "=";
+            var allCookieArray = document.cookie.split(';');
+            for (var i = 0; i < allCookieArray.length; i++) {
+                var temp = allCookieArray[i].trim();
+                if (temp.indexOf(name) == 0)
+                    return temp.substring(name.length, temp.length);
             }
-          }
+            return "";
         }
-	</script>
 
+        function checkCookie() {
+            var user = accessCookie("testCookie");
+            if (user != "") {
+                console.log("Welcome Back " + user);
+            } else {
+                user = prompt("Welcome to SVNIT First Year Study Hub! Please enter your name:");
+                if (user != "" && user != null) {
+                    createCookie("testCookie", user, 30);
+                }
+            }
+        }
+    </script>
 </head>
 
+<body onload="checkCookie()">
 
-<body  onload="checkCookie()">
-
-
-    <h1>First Year Study Material</h1>
-    <br>
-
-
-    <div class="study">
-        <div class="first">
-            <div class="books">
-
-                <a href="https://drive.google.com/file/d/1BdiTL9bi8VxBcZr985CSTYJjmG8f7z6Z/view?usp=sharing"
-                    target="_blank">Get all the first year books</a>
-            </div>
-            <br><br>
-
-            <div class="material">
-
-                <a href="https://drive.google.com/folderview?id=1Rlj40hGZLcA-ECbCTVOWPYE0WE9K8jOp" target="_blank">
-                    Get all the first year notes</a>
-            </div>
-            <br><br>
-
-            <div class="coding">
-
-                <a href="https://github.com/sindresorhus/awesome" target="_blank">Library of all the resources for programmers</a>
-            </div>
-        </div>
-
-        <div class="second">
-            <img src="study.jpg" height="530px" width="600px">
-        </div>
+    <div class="header-banner">
+        <h1>📚 SVNIT First Year Study Material &amp; Resources</h1>
+        <p>Your one-stop academic repository for Standard Textbooks, First Year Handwritten Notes, Mathematics &amp; Computing resources, and the Best YouTube Educators.</p>
     </div>
 
+    <div class="container">
 
-<br><br>
-<a href="SVNIT First Year Helpdesk.html" class="moveto">
-Move Back To <span>Home Page</span></a>
+        <!-- SECTION 1: CORE BOOKS & NOTES -->
+        <h2 class="section-title"><i class="fa fa-book"></i> 1. Core Textbooks, Notes &amp; Drive Repositories</h2>
+        <div class="grid-3">
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-folder-open card-icon"></i>
+                    <span class="tag">Complete Drive</span>
+                    <h3>First Year Engineering Books</h3>
+                    <p>Standard prescribed textbooks for Mathematics I &amp; II (Erwin Kreyszig, B.S. Grewal), Physics, Chemistry, Basic Electrical Engineering, and Engineering Mechanics.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1BdiTL9bi8VxBcZr985CSTYJjmG8f7z6Z/view?usp=sharing" target="_blank" class="btn-link"><i class="fa fa-download"></i> Get First Year Books Drive</a>
+            </div>
 
-<br><br>
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-pencil-square-o card-icon" style="color: #60a5fa;"></i>
+                    <span class="tag" style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.4);">Handwritten Notes</span>
+                    <h3>First Year Notes &amp; PYQs</h3>
+                    <p>Curated semester-wise lecture notes, previous years question papers (PYQs), tutorial solution sets, and lab manuals organized for SVNIT students.</p>
+                </div>
+                <a href="https://drive.google.com/folderview?id=1Rlj40hGZLcA-ECbCTVOWPYE0WE9K8jOp" target="_blank" class="btn-link"><i class="fa fa-folder"></i> Access Notes Drive</a>
+            </div>
 
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-graduation-cap card-icon" style="color: #f43f5e;"></i>
+                    <span class="tag" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.4);">Official Portal</span>
+                    <h3>NPTEL &amp; Swayam IIT Courses</h3>
+                    <p>Direct IIT lecture notes, video lectures, and assignments covering Linear Algebra, Calculus, Differential Equations, and Data Structures.</p>
+                </div>
+                <a href="https://nptel.ac.in/courses" target="_blank" class="btn-link"><i class="fa fa-external-link"></i> Browse NPTEL Courses</a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: MATHEMATICS & COMPUTING HUB -->
+        <h2 class="section-title"><i class="fa fa-code"></i> 2. Mathematics &amp; Computing &amp; Programming Hub</h2>
+        <div class="grid-3">
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-laptop card-icon" style="color: #a855f7;"></i>
+                    <span class="tag" style="color: #a855f7; border-color: rgba(168, 85, 247, 0.4);">DSA &amp; CP</span>
+                    <h3>Striver's A2Z DSA Sheet</h3>
+                    <p>The definitive step-by-step Data Structures &amp; Algorithms roadmap covering Arrays, Linked Lists, Trees, Graphs, and Dynamic Programming.</p>
+                </div>
+                <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" class="btn-link"><i class="fa fa-check-circle"></i> Open Striver DSA Sheet</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-database card-icon" style="color: #2dd4bf;"></i>
+                    <span class="tag" style="color: #2dd4bf; border-color: rgba(45, 212, 191, 0.4);">Algorithms Guide</span>
+                    <h3>CP-Algorithms &amp; CSES Set</h3>
+                    <p>In-depth mathematical algorithms, number theory, graph theory, geometry, and the renowned CSES 300 problem set for programmers.</p>
+                </div>
+                <a href="https://cp-algorithms.com/" target="_blank" class="btn-link"><i class="fa fa-code"></i> Explore CP-Algorithms</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-github card-icon" style="color: #f59e0b;"></i>
+                    <span class="tag" style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.4);">Global Library</span>
+                    <h3>GitHub Awesome CS Resources</h3>
+                    <p>Vast community-curated collection of free computer science textbooks, cheat sheets, developer tools, algorithms, and projects.</p>
+                </div>
+                <a href="https://github.com/sindresorhus/awesome" target="_blank" class="btn-link"><i class="fa fa-github"></i> Open Awesome Repo</a>
+            </div>
+        </div>
+
+        <!-- SECTION 3: BEST YOUTUBE TEACHERS -->
+        <h2 class="section-title"><i class="fa fa-youtube-play" style="color: #ef4444;"></i> 3. Best YouTube Teachers for 1st Year Engineering &amp; MaC</h2>
+        <div class="grid-3">
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-calculator card-icon" style="color: #f59e0b;"></i>
+                    <span class="tag">Engineering Mathematics</span>
+                    <h3>Dr. Gajendra Purohit (GP Sir)</h3>
+                    <p>Best for Engineering Mathematics I &amp; II, Linear Algebra, Multivariable Calculus, Vector Calculus, and Differential Equations with clear step-by-step problem solving.</p>
+                </div>
+                <a href="https://www.youtube.com/@DrGajendraPurohitGATE" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch Dr. Gajendra Purohit</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-line-chart card-icon" style="color: #38bdf8;"></i>
+                    <span class="tag">Mathematics &amp; Intuition</span>
+                    <h3>3Blue1Brown &amp; MKS Tutorials</h3>
+                    <p><b>3Blue1Brown:</b> World-renowned visual explanations of Linear Algebra and Calculus.<br><b>MKS Tutorials:</b> In-depth university exam syllabus coverage.</p>
+                </div>
+                <a href="https://www.youtube.com/@3blue1brown" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch 3Blue1Brown</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-cogs card-icon" style="color: #10b981;"></i>
+                    <span class="tag">Data Structures &amp; Algorithms</span>
+                    <h3>Abdul Bari</h3>
+                    <p>Legendary educator for understanding Algorithms, Time Complexities, Dynamic Programming, Greedy Methods, Graphs, and Data Structures conceptually.</p>
+                </div>
+                <a href="https://www.youtube.com/@abdul_bari" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch Abdul Bari</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-terminal card-icon" style="color: #6366f1;"></i>
+                    <span class="tag">C / C++ &amp; DSA in Hindi</span>
+                    <h3>CodeWithHarry &amp; Striver</h3>
+                    <p><b>CodeWithHarry:</b> Full Hindi beginner courses for C, C++, and Python.<br><b>takeUforward (Striver):</b> High-level DSA interview preparation and algorithmic problem solving.</p>
+                </div>
+                <a href="https://www.youtube.com/@takeUforward" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch takeUforward</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-microchip card-icon" style="color: #ec4899;"></i>
+                    <span class="tag">Electrical &amp; Electronics</span>
+                    <h3>Neso Academy</h3>
+                    <p>Clear, illustrated, and comprehensive lectures for Basic Electrical Engineering, Digital Electronics, and C Programming fundamentals.</p>
+                </div>
+                <a href="https://www.youtube.com/@nesoacademy" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch Neso Academy</a>
+            </div>
+
+            <div class="resource-card">
+                <div>
+                    <i class="fa fa-wrench card-icon" style="color: #eab308;"></i>
+                    <span class="tag">Mechanics &amp; Graphics</span>
+                    <h3>Tikle's Academy &amp; Gate Smashers</h3>
+                    <p><b>Tikle's Academy:</b> Best for Engineering Mechanics &amp; Engineering Graphics.<br><b>Gate Smashers:</b> Rapid core engineering concept clarification.</p>
+                </div>
+                <a href="https://www.youtube.com/@TiklesAcademy" target="_blank" class="btn-link btn-yt"><i class="fa fa-youtube-play"></i> Watch Tikle's Academy</a>
+            </div>
+        </div>
+
+        <div class="back-nav">
+            <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i> Move Back To Home Page</a>
+        </div>
+
+    </div>
+
+    <!-- STYLED DEVELOPER BADGE -->
+    <div class="dev-credit-container">
+        <div class="dev-credit-badge">
+            <span class="label">Designed &amp; Developed by</span>
+            <span class="name">Priyanshu Kumar</span>
+            <span class="roll">I22MA017</span>
+            <span class="divider">|</span>
+            <span class="dept-badge">Department of Mathematics, SVNIT Surat</span>
+        </div>
+    </div>
+    <br>
 
 </body>
 
-</html>
+</html>

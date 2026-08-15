@@ -2,10 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BUGABOOSET</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+      .verified-note {
+        text-align: center;
+        color: #94a3b8;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+        margin: 10px 20px 25px 20px;
+      }
+      .verified-note b { color: #38ef7d; }
+      .verified-note a { color: #46bddf; }
+      .section-head { color: #e95065; text-align: center; }
+    </style>
   </head> <body>
     <div class="top"><ul>
         <li><div class="navlinks" id="navlinks">
@@ -16,55 +27,105 @@
           <li><a href="contests.htm">Contests</a></li>
           </b></li></ul></div>
 
-          <li><a href="home.htm"><img src="logo.png" width="80" height="80"></li></a></div><br><br><br>
+          <li><a href="home.htm"><img src="logo.png" width="80" height="80" alt="CodersRank logo - back to home"></li></a></div><br><br><br>
         <div class="head"><h1>CODERSRANK PROBLEMSET</h1></div><br>
-      <h2 style="color: #e95065;"><center>INTRODUCTORY PROBLEMS</center></h2>
+
+      <p class="verified-note">
+        A curated starter path through the <b>CSES Problem Set</b>, which currently hosts
+        <b>400 problems across 18 topic sections</b>. Problem titles and links below were verified
+        against the official listing on <b>16 August 2026</b>.
+        Solve them in order &mdash; each section builds on the previous one.
+        <br><br>
+        Full official set: <a href="https://cses.fi/problemset/list/" target="_blank" rel="noopener">cses.fi/problemset/list</a>
+        &nbsp;|&nbsp; Free companion book:
+        <a href="https://cses.fi/book/index.php" target="_blank" rel="noopener">Competitive Programmer's Handbook</a>
+      </p>
+
+      <h2 class="section-head">INTRODUCTORY PROBLEMS</h2>
       <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
-      <a href="https://cses.fi/problemset/task/1068"><div class="listq"><div class="tab"> 1</div><div class="tab"> Weird Algorithm </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1083"><div class="listq"><div class="tab"> 2</div><div class="tab"> Missing number </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1069"><div class="listq"><div class="tab"> 3</div><div class="tab"> Repitions </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1094"><div class="listq"><div class="tab"> 4</div><div class="tab"> Incresing array </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1071"><div class="listq"><div class="tab"> 5</div><div class="tab"> Number spiral </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1072"><div class="listq"><div class="tab"> 6</div><div class="tab"> Two knights </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1617"><div class="listq"><div class="tab"> 7</div><div class="tab"> Bit strings </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2165"><div class="listq"><div class="tab"> 8</div><div class="tab"> Tower of Hanoi </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2431"><div class="listq"><div class="tab"> 9</div><div class="tab"> Digit Queries </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1625"><div class="listq"><div class="tab"> 10</div><div class="tab"> Grid paths </div><div class="tab">       </div></div></a>
-      <br>    <h2 style="color: #e95065;"><center>SORTING AND SEARCHING PROBLEMS</center></h2>
+      <a href="https://cses.fi/problemset/task/1068" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Weird Algorithm </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1083" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Missing Number </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1069" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Repetitions </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1094" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> Increasing Array </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1071" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Number Spiral </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1072" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Two Knights </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1617" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Bit Strings </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2165" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Tower of Hanoi </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2431" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> Digit Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1625" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> Grid Path Description </div><div class="tab">       </div></div></a>
+
+      <br><h2 class="section-head">SORTING AND SEARCHING</h2>
       <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
-      <a href="https://cses.fi/problemset/task/1621"><div class="listq"><div class="tab"> 1</div><div class="tab"> Distinct Numbers </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1090"><div class="listq"><div class="tab"> 2</div><div class="tab"> Ferris wheel </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1629"><div class="listq"><div class="tab"> 3</div><div class="tab"> Movie Festival </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1074"><div class="listq"><div class="tab"> 4</div><div class="tab"> Stick lengths </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2216"><div class="listq"><div class="tab"> 5</div><div class="tab"> Collecting numbers </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1073"><div class="listq"><div class="tab"> 6</div><div class="tab"> Towers </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2162"><div class="listq"><div class="tab"> 7</div><div class="tab"> Josephus problem </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1085"><div class="listq"><div class="tab"> 8</div><div class="tab"> Array Division </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1631"><div class="listq"><div class="tab"> 9</div><div class="tab"> Reading books </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1620"><div class="listq"><div class="tab"> 10</div><div class="tab"> Factory Machines </div><div class="tab">       </div></div></a>
- 
-      <br>    <h2 style="color: #e95065;"><center>DYNAMIC PROGRAMMING</center></h2>
+      <a href="https://cses.fi/problemset/task/1621" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Distinct Numbers </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1090" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Ferris Wheel </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1629" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Movie Festival </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1074" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> Stick Lengths </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2216" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Collecting Numbers </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1073" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Towers </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2162" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Josephus Problem I </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1085" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Array Division </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1631" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> Reading Books </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1620" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> Factory Machines </div><div class="tab">       </div></div></a>
+
+      <br><h2 class="section-head">DYNAMIC PROGRAMMING</h2>
       <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
-      <a href="https://cses.fi/problemset/task/1633"><div class="listq"><div class="tab"> 1</div><div class="tab"> Dice combinations </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1638"><div class="listq"><div class="tab"> 2</div><div class="tab"> Grid paths </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2413"><div class="listq"><div class="tab"> 3</div><div class="tab"> Counting Towers </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1745"><div class="listq"><div class="tab"> 4</div><div class="tab"> Money sums </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1097"><div class="listq"><div class="tab"> 5</div><div class="tab"> Removal game </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1140"><div class="listq"><div class="tab"> 6</div><div class="tab"> Projects </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1653"><div class="listq"><div class="tab"> 7</div><div class="tab"> Elevator Rides </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2181"><div class="listq"><div class="tab"> 8</div><div class="tab"> Counting tilings </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/2220"><div class="listq"><div class="tab"> 9</div><div class="tab"> Counting Numbers </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1158"><div class="listq"><div class="tab"> 10</div><div class="tab"> Book shop </div><div class="tab">       </div></div></a>
-      <br>    <h2 style="color: #e95065;"><center>GRAPH ALGORIHMS</center></h2>
+      <a href="https://cses.fi/problemset/task/1633" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Dice Combinations </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1638" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Grid Paths I </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2413" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Counting Towers </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1745" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> Money Sums </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1097" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Removal Game </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1140" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Projects </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1653" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Elevator Rides </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2181" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Counting Tilings </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/2220" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> Counting Numbers </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1158" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> Book Shop </div><div class="tab">       </div></div></a>
+
+      <br><h2 class="section-head">GRAPH ALGORITHMS</h2>
       <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
-      <a href="https://cses.fi/problemset/task/1192"><div class="listq"><div class="tab"> 1</div><div class="tab"> Counting Rooms </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1666"><div class="listq"><div class="tab"> 2</div><div class="tab"> Building roads </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1194"><div class="listq"><div class="tab"> 3</div><div class="tab"> Monsters </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1673"><div class="listq"><div class="tab"> 4</div><div class="tab"> High Score </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1197"><div class="listq"><div class="tab"> 5</div><div class="tab"> Cycle Finding </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1679"><div class="listq"><div class="tab"> 6</div><div class="tab"> Course Schedule </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1202"><div class="listq"><div class="tab"> 7</div><div class="tab"> Investigation </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1681"><div class="listq"><div class="tab"> 8</div><div class="tab"> Game routes </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1684"><div class="listq"><div class="tab"> 9</div><div class="tab"> Giant pizza </div><div class="tab">       </div></div></a>
-      <a href="https://cses.fi/problemset/task/1696"><div class="listq"><div class="tab"> 10</div><div class="tab"> School Dance </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1192" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Counting Rooms </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1666" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Building Roads </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1194" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Monsters </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1673" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> High Score </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1197" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Cycle Finding </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1679" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Course Schedule </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1202" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Investigation </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1681" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Game Routes </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1684" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> Giant Pizza </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1696" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> School Dance </div><div class="tab">       </div></div></a>
+
+      <br><h2 class="section-head">RANGE QUERIES</h2>
+      <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
+      <a href="https://cses.fi/problemset/task/1646" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Static Range Sum Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1647" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Static Range Minimum Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1648" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Dynamic Range Sum Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1649" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> Dynamic Range Minimum Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1650" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Range Xor Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1651" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Range Update Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1652" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Forest Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1143" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Hotel Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1749" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> List Removals </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1144" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> Salary Queries </div><div class="tab">       </div></div></a>
+
+      <br><h2 class="section-head">TREE ALGORITHMS</h2>
+      <div class="listq"><div class="tab"> Q.no. </div><div class="tab"> Question Name </div><div class="tab"> Status </div></div>
+      <a href="https://cses.fi/problemset/task/1674" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 1</div><div class="tab"> Subordinates </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1130" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 2</div><div class="tab"> Tree Matching </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1131" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 3</div><div class="tab"> Tree Diameter </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1132" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 4</div><div class="tab"> Tree Distances I </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1133" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 5</div><div class="tab"> Tree Distances II </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1687" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 6</div><div class="tab"> Company Queries I </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1688" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 7</div><div class="tab"> Company Queries II </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1135" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 8</div><div class="tab"> Distance Queries </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1136" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 9</div><div class="tab"> Counting Paths </div><div class="tab">       </div></div></a>
+      <a href="https://cses.fi/problemset/task/1137" target="_blank" rel="noopener"><div class="listq"><div class="tab"> 10</div><div class="tab"> Subtree Queries </div><div class="tab">       </div></div></a>
+
+      <div class="dev-credit-container">
+          <div class="dev-credit-badge">
+              <span class="label">Designed &amp; Developed by</span>
+              <span class="name">Priyanshu Kumar</span>
+              <span class="roll">I22MA017</span>
+              <span class="divider">|</span>
+              <span class="dept-badge">Department of Mathematics, SVNIT Surat</span>
+          </div>
+      </div>
   </body></html>

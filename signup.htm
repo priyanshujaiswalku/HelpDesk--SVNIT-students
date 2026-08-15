@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>codersrank_registration</title>
     <style>
       .logo img:hover {
@@ -12,16 +14,18 @@
         font-size: 135%;
       }
     </style>
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
     <div class="logo">
-      <a href="home.htm"><img src="logo.png" width="100" height="100" /></a>
+      <a href="home.htm"><img src="logo.png" width="100" height="100" alt="CodersRank logo - back to home" /></a>
     </div>
     <center>
       <img
         src="signup.jpeg"
         width="800"
         height="400"
+        alt="CodersRank registration banner"
       /><br />
       <h4>"The time is now. Get ready with all your skills"</h4>
       <br />
@@ -55,11 +59,11 @@
             readonly
             autofocus
           /><br /><br />
-          <label for="date of birth">Date of birth:</label>
+          <label for="dob">Date of birth:</label>
           <input
             type="date"
-            id="date of birth"
-            name="dat' of birth"
+            id="dob"
+            name="dob"
             required
           /><br /><br />
           <label for="email">Enter your email:</label>
@@ -84,50 +88,49 @@
         /><br /><br />
         <fieldset>
           <legend>Experience as a Coder</legend>
-          <h4>Which programming-languages you know ?</h4>
-          <input type="checkbox" id="language1" name="language1" value="C++" />
+          <h4>Which programming languages do you know?</h4>
+          <input type="checkbox" id="language1" name="language1" value="C++" checked />
           <label for="language1"> C++</label>
-          <input type="checkbox" id="language2" name="language2" value="C" />
-          <label for="language2"> C </label>
+          <input type="checkbox" id="language4" name="language4" value="Python" />
+          <label for="language4"> Python</label>
           <input type="checkbox" id="language3" name="language3" value="Java" />
           <label for="language3"> Java</label>
-          <input
-            type="checkbox"
-            id="language4"
-            name="language4"
-            value="Python"
-          />
-          <label for="language4"> Python</label><br /><br />
+          <input type="checkbox" id="language2" name="language2" value="C" />
+          <label for="language2"> C</label>
+          <input type="checkbox" id="language5" name="language5" value="Rust" />
+          <label for="language5"> Rust / Go</label><br /><br />
 
-          <label for="myfile">Upload your Certificates :</label>
-          <input type="file" id="myfile" name="myfile" multiple /><br /><br />
-          <label for="Platform">Choose your practicing platform:</label>
-          <input list="Platform" />
+          <label for="github">GitHub Profile / Handle:</label>
+          <input type="text" id="github" name="github" placeholder="https://github.com/username" /><br /><br />
 
-          <datalist id="Platform">
+          <label for="platform">Primary Practicing Platform:</label>
+          <input list="platform-options" id="platform" name="platform" placeholder="Select or type platform" />
+          <datalist id="platform-options">
             <option value="Codeforces"></option>
-            <option value="Codechef"></option>
-            <option value="Hackerrank"></option>
-            <option value="Hackerearth"></option>
-            <option value="Topcoder"></option></datalist
-          ><br /><br />
+            <option value="LeetCode"></option>
+            <option value="AtCoder"></option>
+            <option value="CodeChef"></option>
+            <option value="CSES Problem Set"></option>
+            <option value="HackerRank"></option>
+            <option value="GeeksforGeeks"></option>
+            <option value="USACO Guide"></option>
+          </datalist><br /><br />
 
-          <label for="Rating">Codeforces-rating(between 0 and 3000):</label>
+          <label for="rating">Coding Rating / Profile Score (e.g. 1600+):</label>
           <input
             type="number"
             id="rating"
             name="rating"
             min="0"
-            max="3000"
+            max="4000"
+            placeholder="1500"
             autocomplete="off"
           /><br /><br />
-          <label for="Future">Select your category :</label>
-          <select name="Future" id="Future">
-            <option value="Student">Student</option>
-            <option value="Professional">Professional</option>
-            <option value="Problem-setter">Problem-setter</option>
-            <br /><br />
-            <br />
+          <label for="Future">Select your category:</label>          <select name="Future" id="Future">
+            <option value="Student">SVNIT First Year Student</option>
+            <option value="SeniorStudent">SVNIT Senior / MaC Student</option>
+            <option value="Professional">Competitive Programmer</option>
+            <option value="Problem-setter">Problem Setter / ICPC Enthusiast</option>
           </select>
         </fieldset>
         <br />
@@ -145,6 +148,15 @@
       </form>
       <h5>Ok,Done now click on submit button and wait for our mail</h5>
       <h3>KEEP PRACTICING...</h3>
+      <div class="dev-credit-container">
+          <div class="dev-credit-badge">
+              <span class="label">Designed &amp; Developed by</span>
+              <span class="name">Priyanshu Kumar</span>
+              <span class="roll">I22MA017</span>
+              <span class="divider">|</span>
+              <span class="dept-badge">Department of Mathematics, SVNIT Surat</span>
+          </div>
+      </div>
     </center>
 
 
