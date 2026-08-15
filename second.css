@@ -376,6 +376,69 @@ body{
           }
   }
 
+/* Department of Mathematics photo section - follows the same heading style as
+   the .photo / .gallery gallery headings above. */
+.dept {
+    margin: 2%;
+}
+.dept-title {
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-left: 60px;
+    color: teal;
+}
+.dept-title2 {
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: rgb(167, 108, 108);
+}
+.dept-photos {
+    display: flex;
+    gap: 30px;
+    margin: 30px 60px 0 60px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.dept-card {
+    border: 6px solid rgb(130, 113, 134);
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 12px;
+    flex: 1 1 420px;
+    max-width: 620px;
+    transition: 0.4s;
+}
+.dept-card:hover {
+    box-shadow: 0 0 40px 0px rgb(4, 250, 229);
+}
+.dept-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 0;
+    display: block;
+}
+.dept-card figcaption {
+    color: rgb(157, 179, 196);
+    font-size: 18px;
+    text-align: center;
+    padding-top: 12px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.dept-card figcaption b { color: rgb(144, 171, 221); }
+
+@media (max-width: 1100px) {
+    .dept-photos {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .dept-title, .dept-title2 { margin-left: 20px; font-size: 30px; }
+}
+
 .dev-credit-container {
     text-align: center;
     width: 100%;
