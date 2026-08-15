@@ -9,7 +9,3 @@ package.json
 package-lock.json
 server.js
 
-# Empty placeholder files (1-2 bytes) that would otherwise serve blank pages.
-# The real homepage nav uses home.htm, not home.html.
-home.html
-matches
