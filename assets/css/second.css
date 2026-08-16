@@ -561,3 +561,27 @@ body{
 
 
 
+
+/* Developer name links to the LinkedIn profile. The <a> carries no colour of
+   its own so the .name span keeps whichever colour this page's badge uses. */
+.dev-credit-badge .name-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+}
+.dev-credit-badge .name-link:hover .name {
+    text-decoration: underline;
+}
+.dev-credit-badge .name-li {
+    color: #0a66c2;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 2px;
+    flex: 0 0 auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.dev-credit-badge .name-link:hover .name-li {
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(10, 102, 194, 0.7);
+}

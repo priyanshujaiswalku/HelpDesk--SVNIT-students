@@ -27,7 +27,6 @@ development only. Vercel serves the files directly in production.
 ├── studymaterial.html              # Study material for first-year subjects
 ├── contact.html                    # Registration form
 ├── contactus.html                  # Contact details, campus map, directions
-├── SVNIT First Year Helpdesk.html  # Alternate copy of the homepage
 │
 ├── home.htm                        # CodersRank: what/why competitive programming
 ├── resources.htm                   # CodersRank: DSA sheets, platforms, guides
